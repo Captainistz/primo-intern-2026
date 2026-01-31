@@ -66,8 +66,8 @@ primo/
 │       └── merge_test.ts   # Test suite
 ├── dist/                   # Compiled output
 ├── eslint.config.ts        # ESLint configuration
-├── jest.config.ts          # Jest configuration
-├── prettier.config.ts      # Prettier configuration
+├── jest.config.js          # Jest configuration
+├── .prettierrc             # Prettier configuration
 ├── tsconfig.json           # TypeScript configuration
 ├── package.json
 └── README.md
