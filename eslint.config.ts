@@ -1,10 +1,12 @@
 import eslint from '@eslint/js'
-import tseslint from 'typescript-eslint'
 
-export default tseslint.config(
+import { defineConfig } from 'eslint/config'
+import { configs } from 'typescript-eslint'
+
+export default defineConfig([
   eslint.configs.recommended,
-  ...tseslint.configs.strictTypeChecked,
-  ...tseslint.configs.stylisticTypeChecked,
+  ...configs.strictTypeChecked,
+  ...configs.stylisticTypeChecked,
   {
     languageOptions: {
       parserOptions: {
@@ -36,6 +38,6 @@ export default tseslint.config(
     },
   },
   {
-    ignores: ['dist/', 'node_modules/', 'coverage/'],
+    ignores: ['dist/', 'node_modules/', 'coverage/', 'jest.config.js'],
   },
-)
+])

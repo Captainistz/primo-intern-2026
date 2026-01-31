@@ -19,14 +19,15 @@
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf dist coverage",
     "prebuild": "npm run clean",
-    "prepare": "husky"
+    "prepare": "husky",
+    "all": "npm run typecheck && npm run lint && npm run format:check && npm test && npm run build"
   },
   "keywords": [],
   "author": "Captain Phungpensuk",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "@eslint/js": "^9.18.0",
+    "@eslint/js": "^9.39.2",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.0",
     "eslint": "^9.18.0",
