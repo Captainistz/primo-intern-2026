@@ -20,6 +20,25 @@ Pre-interview coding challenge - A TypeScript utility for merging sorted arrays.
 npm install
 ```
 
+## Run
+
+```bash
+npm run build && npm start
+```
+
+## Development
+
+```bash
+npm run dev
+```
+
+## Test
+
+```bash
+npm run test:coverage
+open coverage/index.html # Check coverage
+```
+
 ## Scripts
 
 | Command | Description |
